@@ -34,6 +34,8 @@
 
 .portfolio {
   &__list {
+    margin-bottom: -30px;
+
     @media screen and (min-width: 768px) {
       display: flex;
       flex-wrap: wrap;
@@ -43,7 +45,7 @@
   }
 
   &__item {
-    width: 290px;
+    width: 100%;
     margin-bottom: 30px;
 
     @media screen and (min-width: 480px) {
@@ -58,18 +60,6 @@
 
     @media screen and (min-width: 1200px) {
       flex-basis: calc((100% - 90px) / 3);
-    }
-  }
-
-  &__item:last-child {
-    @media screen and (max-width: 1199px) {
-      margin-bottom: 0;
-    }
-  }
-
-  &__item:nth-last-child(-n + 3) {
-    @media screen and (min-width: 1200px) {
-      margin-bottom: 0;
     }
   }
 
