@@ -1,7 +1,14 @@
 .header {
   border-bottom: 1px solid #eeeeee;
   padding: 16px 0;
-  // padding: 25px 0;
+
+  @media screen and (min-width: 768px) {
+    padding: 23px 0;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding: 25px 0;
+  }
 
   &__container {
     display: flex;
@@ -50,6 +57,10 @@
       background: #2196f3;
       border: 2px solid;
       border-radius: 2px;
+
+      @media screen and (min-width: 1200px) {
+        bottom: -36px;
+      }
     }
   }
 }
@@ -60,7 +71,9 @@
   }
 
   &__item:not(:last-child) {
-    margin-right: 50px;
+    @media screen and (min-width: 1200px) {
+      margin-right: 50px;
+    }
   }
 
   &__icon {
@@ -101,11 +114,26 @@
 .header {
   &__nav {
     display: none;
-    margin: 0;
-    margin-left: 93px;
+
+    @media screen and (min-width: 768px) {
+      display: flex;
+      margin-left: 88px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      margin-left: 93px;
+    }
   }
 
   &__contacts {
     display: none;
+
+    @media screen and (min-width: 768px) {
+      display: block;
+    }
+
+    @media screen and (min-width: 1200px) {
+      display: flex;
+    }
   }
 }
