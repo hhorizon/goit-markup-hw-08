@@ -13,7 +13,7 @@
 </head>
 
 <body>
-    <!-- <header class="header">
+    <header class="header">
         <div class="container header__container">
             <nav class="nav">
                 <a class="logo" href="./index.html"> Web<span class="logo__span--color--black">Studio</span></a>
@@ -31,7 +31,7 @@
                 </ul>
             </nav>
             
-            <ul class="contacts__list">
+            <ul class="contacts__list header__contacts">
                 <li class="contacts__item">
                     <a class="contacts__link link" href="mailto:info@devstudio.com">
                         <svg class="contacts__icon mail-icon">
@@ -49,8 +49,40 @@
                     </a>
                 </li>
             </ul>
+
+            <button class="menu-open" type="button">
+                <svg class="menu-open__icon">
+                    <use href="./images/symbol-defs.svg#icon-menu-open"></use>
+                </svg>
+            </button>
+
+            <div class="mobile-nav is-hidden">
+                <button class="menu-close" type="button">
+                    <svg class="menu-open__icon">
+                        <use href="./images/symbol-defs.svg#icon-menu-open"></use>
+                    </svg>
+                </button>
+                
+                <ul class="">
+                    <li class="">
+                        <a class=" nav__link--current" href="./index.html">Студия</a>
+                    </li>
+                    <li class="">
+                        <a class="" href="./portfolio.html">Портфолио</a>
+                    </li>
+                    <li class="">
+                        <a class="" href="">Контакты</a>
+                    </li>
+                </ul>
+
+                <ul>
+                    <li>sdfsdf</li>
+                    <li>sdfsdf</li>
+                </ul>
+            </div>
+
         </div>
-    </header> -->
+    </header>
 
     <main>
         <!--Герой-->
@@ -490,6 +522,7 @@
     </div>
 
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
 </body>
 
 </html>

@@ -1,11 +1,7 @@
 .header {
   border-bottom: 1px solid #eeeeee;
-  padding: 25px 0;
-
-  &__nav {
-    margin: 0;
-    margin-left: 93px;
-  }
+  padding: 16px 0;
+  // padding: 25px 0;
 
   &__container {
     display: flex;
@@ -98,5 +94,17 @@
     &:focus .contacts__icon {
       fill: var(--brand-color);
     }
+  }
+}
+
+.header {
+  &__nav {
+    display: none;
+    margin: 0;
+    margin-left: 93px;
+  }
+
+  &__contacts {
+    display: none;
   }
 }
