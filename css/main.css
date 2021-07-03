@@ -175,7 +175,7 @@ ul {
 .nav__link--current::after {
   display: inline-block;
   position: absolute;
-  bottom: -32px;
+  bottom: -36px;
   left: 0;
   content: "";
   width: 100%;
@@ -184,14 +184,14 @@ ul {
   border-radius: 2px;
 }
 
-@media screen and (min-width: 1200px) {
-  .nav__link--current::after {
-    bottom: -36px;
-  }
-}
-
 .contacts__list {
   display: flex;
+}
+
+@media screen and (min-width: 768px) {
+  .contacts__item:not(:last-child) {
+    margin-bottom: 10px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -623,11 +623,12 @@ ul {
 
 .mobile-nav {
   position: fixed;
-  background-color: #fff;
+  z-index: 1;
   top: 0;
   left: 0;
   width: 100vw;
   height: 100vh;
+  background-color: #fff;
 }
 
 .mobile-nav__container {
