@@ -20,13 +20,11 @@
     margin-bottom: 60px;
     @media screen and (min-width: 768px) {
       display: flex;
-      justify-content: space-between;
-      align-items: baseline;
-
-      margin: 0 74px 60px 61px;
+      justify-content: space-around;
     }
 
     @media screen and (min-width: 1200px) {
+      align-items: baseline;
       margin: 0;
     }
   }
@@ -68,8 +66,6 @@
 }
 
 .join {
-  margin-bottom: 60px;
-
   text-align: center;
 
   @media screen and (min-width: 1200px) {
